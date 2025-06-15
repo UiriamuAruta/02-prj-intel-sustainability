@@ -73,6 +73,7 @@
       padding: var(--card-padding);
       scroll-snap-align: start;
       transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+      position: relative;
     }
 
     section div:hover {
@@ -100,6 +101,17 @@
       font-size: 0.95rem;
     }
 
+    section div .details {
+      display: none;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    section div:hover .details {
+      display: block;
+    }
+
     body > p:last-of-type {
       text-align: center;
       font-style: italic;
@@ -112,6 +124,7 @@
         overflow-x: visible;
         scroll-snap-type: none;
       }
+
       section div {
         width: 100%;
       }
@@ -136,11 +149,46 @@
   </nav>
 
   <section>
-    <!-- Cards with AI-generated image links replaced -->
-    <!-- Cards content omitted here for brevity, assume images and text match updated visuals -->
+    <div>
+      <h2>1968</h2>
+      <h3>Intel is Founded</h3>
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Founding" />
+      <p>Beginning of Intel’s innovation journey.</p>
+      <div class="details">
+        Intel begins setting the foundation for technological advancement, which would later incorporate sustainable practices.
+      </div>
+    </div>
+    <div>
+      <h2>2003</h2>
+      <h3>First Sustainability Report</h3>
+      <img src="https://images.unsplash.com/photo-1593642634443-44adaa06623a?auto=format&fit=crop&w=800&q=60" alt="Sustainability Report" />
+      <p>Intel releases its first corporate responsibility report.</p>
+      <div class="details">
+        This report outlines Intel’s environmental goals and community engagement efforts, launching a new era of accountability.
+      </div>
+    </div>
+    <div>
+      <h2>2012</h2>
+      <h3>100% Conflict-Free Microprocessors</h3>
+      <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=60" alt="Conflict-Free Chips" />
+      <p>Conflict-free commitment hits milestone.</p>
+      <div class="details">
+        Intel becomes the first company to produce microprocessors validated as conflict-free for tantalum, tin, tungsten, and gold.
+      </div>
+    </div>
+    <div>
+      <h2>2020</h2>
+      <h3>2030 RISE Strategy Announced</h3>
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="RISE Goals" />
+      <p>Intel launches RISE goals for 2030.</p>
+      <div class="details">
+        The RISE framework focuses on responsibility, inclusion, sustainability, and enabling technology to solve global challenges.
+      </div>
+    </div>
   </section>
 
   <p>Scroll to view timeline | Hover over cards to learn more!</p>
 </body>
 </html>
+
 
