@@ -1,1 +1,30 @@
 /* Add your CSS here */
+/* Scroll Snap Effect */
+section {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-padding: 1rem;
+}
+
+section div {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* Card Transforms on Hover */
+section div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+}
+
+section div:hover {
+  transform: scale(1.03) translateY(-4px) rotateZ(-0.2deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Smooth Scrolling (for supported browsers) */
+html {
+  scroll-behavior: smooth;
+}
